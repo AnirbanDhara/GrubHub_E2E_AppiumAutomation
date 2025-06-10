@@ -3,7 +3,7 @@
 I’ve reviewed the features and usability of the Grubhub app from it’s official website, and installed the app on an real device as well as emulator. This Mobile automation project consists 5 end-to-end (E2E) functional test scenarios specifically crafted to catch potential bugs in critical user flows.
 
 ## About:
-![Screenshot 2025-06-02 215914](https://github.com/user-attachments/assets/fa5990bb-528c-4bb6-8358-77f1834d055f) ![Screenshot 2025-06-10 214931](https://github.com/user-attachments/assets/1cdd9dbe-620a-4093-b3ec-e04811c84ae3)
+![Screenshot 2025-06-10 230029](https://github.com/user-attachments/assets/0772fe83-7a73-4051-bda3-018141b9a968)
 
 Local Food Delivery & Restaurant Takeout Grubhub is an android app. If you’re hungry and want to order food from your favorite restaurant, GrubHub food delivery is for you. You can place an order at any one of 28,000 restaurants across nearly 1,000 cities in the United States. Order or pick up your food with just a few taps on the screen. Find new local deals and restaurant specials.
 
