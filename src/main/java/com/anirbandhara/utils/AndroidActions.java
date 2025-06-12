@@ -63,7 +63,8 @@ public class AndroidActions {
         driver.perform(Arrays.asList(tap));
     }
 
-    public void clickButton(WebElement ele){
+    public void clickAction(WebElement ele){
         ele.click();
     }
+
 }

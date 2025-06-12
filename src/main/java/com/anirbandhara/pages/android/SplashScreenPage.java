@@ -35,11 +35,11 @@ public class SplashScreenPage extends AndroidActions {
     private WebElement addressBar;
 
     public void clickSearchNearBy(){
-        clickButton(searchNearByButton);
+        clickAction(searchNearByButton);
     }
 
     public void clickSignIn(){
-        clickButton(signInButton);
+        clickAction(signInButton);
     }
 
     public void searchAddress(String location){
