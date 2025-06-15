@@ -16,8 +16,8 @@ public class TestGrubHub extends BaseTest{
         screenPage.choosePlace();
 
         HomePage homePage = new HomePage(driver);
-        homePage.scrollRestaurantsAndSelectFoodType("Delicious Deals");
-        Thread.sleep(10000);
+        homePage.scrollRestaurantsAndSelectFoodType("Crispy and Cheesy");
+        Thread.sleep(2000);
 
 //        RelatedSearchPage searchPage = new RelatedSearchPage(driver);
 
