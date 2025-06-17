@@ -55,7 +55,7 @@ public class SplashScreenPage extends AndroidActions {
         PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
 
         Sequence tap = new Sequence(finger, 1);
-        tap.addAction(finger.createPointerMove(Duration.ofSeconds(2), PointerInput.Origin.viewport(), 453, 1195));
+        tap.addAction(finger.createPointerMove(Duration.ofSeconds(2), PointerInput.Origin.viewport(), 239, 948));
         tap.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
         tap.addAction(new Pause(finger, Duration.ofMillis(200))); // Optional pause for realism
         tap.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));

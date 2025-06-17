@@ -16,10 +16,12 @@ public class TestGrubHub extends BaseTest{
         screenPage.choosePlace();
 
         HomePage homePage = new HomePage(driver);
-        homePage.scrollRestaurantsAndSelectFoodType("Crispy and Cheesy");
+        homePage.scrollRestaurantsAndSelectFoodType("Delicious Deals");
         Thread.sleep(2000);
 
-//        RelatedSearchPage searchPage = new RelatedSearchPage(driver);
+        RelatedSearchPage searchPage = new RelatedSearchPage(driver);
+        searchPage.chooseRestaurant();
+        Thread.sleep(2000);
 
 
     }

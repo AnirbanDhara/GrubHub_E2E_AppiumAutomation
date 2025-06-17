@@ -26,18 +26,21 @@ public class HomePage extends AndroidActions {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.grubhub.android:id/carousel_title\" and @text=\"Crispy and Cheesy\"]"+"/following-sibling::androidx.recyclerview.widget.RecyclerView[@resource-id=\"com.grubhub.android:id/topics_carousel\"]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.grubhub.android:id/carousel_title\" and @text=\"Delicious Deals\"]"+"/following-sibling::androidx.recyclerview.widget.RecyclerView")
     private WebElement restaurants;
 
     public void scrollRestaurantsAndSelectFoodType(String sectionName){
         scrollToText(sectionName);
 
-        swipeAction(restaurants, "left");
+        int count = 3;
+        for(int i = 0; i < count; i++){
+            swipeAction(restaurants, "left");
+        }
 
         PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
 
         Sequence tap = new Sequence(finger, 1);
-        tap.addAction(finger.createPointerMove(Duration.ofSeconds(2), PointerInput.Origin.viewport(), 96, 1754));
+        tap.addAction(finger.createPointerMove(Duration.ofSeconds(2), PointerInput.Origin.viewport(), 408, 863));
         tap.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
         tap.addAction(new Pause(finger, Duration.ofMillis(200))); // Optional pause for realism
         tap.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
